@@ -88,7 +88,7 @@ Both **Decentralized Random Number Generation** and **Mental Poker Protocol** re
 TrueDeck developers are working on ground-breaking technologies and bringing innovation to the gambling industry. TrueDeck platform will be open-source and fully transparent. The platform will comprise a number of technologies which will facilitate the development of complex gambling games.
 
 ### For Casino Owners
-TrueDeck Platform will be a **“Casino-as-a-service”** where anyone with enough TRUE tokens will be able to create his own casino over TrueDeck platform. **Casino can be deployed with just a few clicks.** The operator can choose to have only specific casino games from TrueDeck Marketplace and pay only for those games. The casinos will share the same features TrueDeck platform provides. However, Casino owners will be free to decide their own parameters like house edge, rake, commission, fees etc. They can also opt to support any cryptocurrency for their casino.
+TrueDeck Platform will be a **“Casino-as-a-service”** where anyone with enough TDP tokens will be able to create his own casino over TrueDeck platform. **Casino can be deployed with just a few clicks.** The operator can choose to have only specific casino games from TrueDeck Marketplace and pay only for those games. The casinos will share the same features TrueDeck platform provides. However, Casino owners will be free to decide their own parameters like house edge, rake, commission, fees etc. They can also opt to support any cryptocurrency for their casino.
 
 ### For Developers & Designers
 Developers & designers will be able to provide their services on TrueDeck Marketplace to develop new casino games or customize the existing ones according to the casino owner needs.
@@ -106,7 +106,7 @@ TrueDeck primary focus is to build a platform rather than only one casino. The p
 Despite TrueDeck being a platform, it will be launching its own official casino with 0% house edge and rake free games. In order to expand this market to billions, TrueDeck Marketplace will facilitate the launch of new casinos by offering development services for casino games customization.
 
 ### Passive Income Source
-TrueDeck tokens will be the true investment assets. We have created fair profit making mechanisms for its token holders. For this purpose, TRUE tokens have been given unique staking utility **“SUIT token mining”**. Not only that, SUIT tokens will also have bankroll staking utility to provide bankroll to TrueDeck platform. Using these utilities TRUE token holders can earn a good amount of passive income by supporting TrueDeck platform.
+TrueDeck tokens will be the true investment assets. We have created fair profit making mechanisms for its token holders. For this purpose, TDP tokens have been given unique staking utility **“SUIT token mining”**. Not only that, SUIT tokens will also have bankroll staking utility to provide bankroll to TrueDeck platform. Using these utilities TDP token holders can earn a good amount of passive income by supporting TrueDeck platform.
 
 ### Shared Bankroll, Large Payouts
 All TrueDeck Platform Casinos will share the same bankroll creating the largest casino network. Large bankroll means mega jackpots and more players. Shared bankroll also eliminates the liquidity problem for a new casino. Through TrueDeck even new casinos can attract large player base.
@@ -138,7 +138,7 @@ EOS Blockchain is aiming to become a decentralized operating system. It will be 
 Apart from features mentioned above, TrueDeck will be committed to provide ultimate satisfaction to players as well as great opportunities to casino owners & developers.
 
 ## TrueDeck Casino
-On TrueDeck Platform, anyone with enough TRUE and SUIT tokens can open their own casino. But TrueDeck will be having it’s own casino “TrueDeck Casino” with lowest house edge and rake free games. On TrueDeck Casino, players will be able to play games using SUIT tokens only. Below is the comparison of other online casinos with TrueDeck Platform casinos.
+On TrueDeck Platform, anyone with enough TDP and SUIT tokens can open their own casino. But TrueDeck will be having it’s own casino “TrueDeck Casino” with lowest house edge and rake free games. On TrueDeck Casino, players will be able to play games using SUIT tokens only. Below is the comparison of other online casinos with TrueDeck Platform casinos.
 
 |  | **Online Casino** | **Blockchain Casino \(Ethereum\)** | **TrueDeck \(EOS\)** |
 | --- | --- | --- | --- |
@@ -160,34 +160,34 @@ TrueDeck will be having a marketplace of Casino dapps developed by individual de
 # Token Mechanism
 TrueDeck will have a 2-tier token mechanism.
 
-### TRUE Token
-TRUE token is the governance token of TrueDeck Platform, just like EOS token is for EOS Blockchain.
-* Total Supply: 25,000,000 TRUE
+### TDP Token
+TDP token is the governance token of TrueDeck Platform, just like EOS token is for EOS Blockchain.
+* Total Supply: 200,000,000 TDP
 * ERC20 & Proof-of-Stake token
 
 ### SUIT Token
-SUIT Token will be the default payment mode for TrueDeck Casino & Marketplace. SUIT can only be created via activating the utility of the TRUE tokens. On the official launch of TrueDeck platform, TRUE token holders will be able to activate this utility and start to generate SUIT tokens. The idea for a separate SUIT token is to provide a stable token to TrueDeck platform. SUIT token supply will be regulated by the *“Mining Smart-Contract”* to maintain a stable value.
+SUIT Token will be the default payment mode for TrueDeck Casino & Marketplace. SUIT can only be created via activating the utility of the TDP tokens. On the official launch of TrueDeck platform, TDP token holders will be able to activate this utility and start to generate SUIT tokens. The idea for a separate SUIT token is to provide a stable token to TrueDeck platform. SUIT token supply will be regulated by the *“Mining Smart-Contract”* to maintain a stable value.
 
 ### SUIT Token Mining
-TRUE token holders can generate new SUIT tokens by locking/staking TRUE tokens in a “Mining Smart-Contract”. Locked TRUE tokens cannot be traded or transferred.
+TDP token holders can generate new SUIT tokens by locking/staking TDP tokens in a “Mining Smart-Contract”. Locked TDP tokens cannot be traded or transferred.
 
 The “Mining Smart-Contract” will work as follows:
-1. A TRUE token holder locks a number of TRUE tokens in the Smart-Contract.
-2. Locked TRUE tokens cannot be traded or transferred.
+1. A TDP token holder locks a number of TDP tokens in the Smart-Contract.
+2. Locked TDP tokens cannot be traded or transferred.
 3. The holder can specify the lock period.
 4. The amount of SUIT tokens created depends on the length of the lock period and the total amount of SUIT tokens in the market.
 5. The Smart-Contract applies the selected lock duration to a formula that is designed to regulate the total market supply of SUIT tokens to provide a stable value to SUIT token.
-6. Prior to locking their TRUE tokens in the Smart-Contract, users will be able to see exactly how many SUIT they will receive as a result of executing the locking transaction.
+6. Prior to locking their TDP tokens in the Smart-Contract, users will be able to see exactly how many SUIT they will receive as a result of executing the locking transaction.
 7. SUIT tokens will be generated proportionally over the lock duration and have to be claimed.
-8. Once the lock expires, the locked TRUE tokens will return to its holder.
-9. There will be no limit to a number \(other than duration\) for how many times TRUE tokens may be used to create SUIT.
-10. There is also no limit to a number of TRUE tokens that can be locked.
+8. Once the lock expires, the locked TDP tokens will return to its holder.
+9. There will be no limit to a number \(other than duration\) for how many times TDP tokens may be used to create SUIT.
+10. There is also no limit to a number of TDP tokens that can be locked.
 
 ### Bankroll Staking
 A casino requires a significant bankroll to payout players when they hit a jackpot. In the long run, casino always wins due to the mathematical advantage and make a good profit. TrueDeck being a decentralized casino will have a bankroll supported by SUIT token holders and profit will be equally distributed to those who staked SUIT tokens in a “Bankroll Smart-Contract”.
 
 ### Casino as a Service
-Using TrueDeck platform “Casino as a Service”, anyone would be able to launch their own casino. They can use existing casino dapps or customize them according to their need by hiring designers & developers from the TrueDeck marketplace. In order to open a casino, one will have to stake TRUE tokens to acquire enough network bandwidth for its casino. Certain amount of SUIT tokens will also be mandatory to stake in “Bankroll Staking Utility”. This will also increase the public TrueDeck bankroll, hence bigger prizes to players.
+Using TrueDeck platform “Casino as a Service”, anyone would be able to launch their own casino. They can use existing casino dapps or customize them according to their need by hiring designers & developers from the TrueDeck marketplace. In order to open a casino, one will have to stake TDP tokens to acquire enough network bandwidth for its casino. Certain amount of SUIT tokens will also be mandatory to stake in “Bankroll Staking Utility”. This will also increase the public TrueDeck bankroll, hence bigger prizes to players.
 
 # Market Analysis & Strategy
 Based on geographical regions, the report segments the global online gambling and betting market into Europe, Asia and Middle East, North America, which are analyzed in terms of revenue generation. Europe is divided into the U.K., Malta, Gibraltar, France, Spain, Italy, Germany and Rest of Europe while North America is further segmented into the U.S., Canada and Rest of North America. Asia is subdivided into China, Japan, Australia, Philippines and Rest of Asia Pacific. Also, Middle East is further segmented into South Africa, Nigeria and Rest of Middle East.
@@ -245,20 +245,20 @@ Being a governed blockchain, JURY will setup permission levels for each operatio
 A Juror will be a node in JURY blockchain and candidate for Block Producers as in EOS blockchain.  When not elected as block producer, Juror will work as a full node. The elected block producers for each round will be responsible to participate in “Decentralized Random Number Generation”. All Juror nodes whether elected as block producer or not, will work as an IPFS and Analyzer node. Jurors will be rewarded for their services and hard investments done to scale the JURY ecosystem. As JURY will be a governed blockchain, Jurors will have to submit their candidacy to be selected as juror. The approval of candidacy will be decided by voters.
 
 ### 2. Voter
-All TRUE token holders will be able to vote to elect a Juror as a block producer. TRUE token holders will be responsible to choose the right candidates to keep the system secure from possible attacks. Those attacks can affect the value of their stake in TrueDeck.
+All TDP token holders will be able to vote to elect a Juror as a block producer. TDP token holders will be responsible to choose the right candidates to keep the system secure from possible attacks. Those attacks can affect the value of their stake in TrueDeck.
 
 ### 3. Applier
 Applier could be an individual or business who will use services offered by JURY in an application. All TrueDeck Platform casinos and TrueDeck casino itself will be an “applier”. An applier will have to stake a certain amount to use these services. Each services like random number generation or IPFS game data logging could be charged but that would be cheaper than current service providers, also trustfree and transparent. 
 
 
 # TrueDeck & JURY Governance
-TrueDeck platform and JURY will be governed by TRUE token holders. TRUE Token holders will be able to vote on all TrueDeck platform decisions as well as JURY Block Producer selection. Locked TRUE tokens will also be considered for voting.
+TrueDeck platform and JURY will be governed by TDP token holders. TDP Token holders will be able to vote on all TrueDeck platform decisions as well as JURY Block Producer selection. Locked TDP tokens will also be considered for voting.
 
 # TrueDeck Solution in detail
 Following is the detailed technical explanation of solutions offered by TrueDeck.
 
 ## Decentralized Random Number Generation \(DRNG\)
-Random number generation is main purpose of JURY. JURY uses a decentralized and collaborative  “commit-and-reveal” algorithm to generate a TRUE random number.
+Random number generation is main purpose of JURY. JURY uses a decentralized and collaborative  “commit-and-reveal” algorithm to generate a TDP random number.
 
 The algorithm works like this:
 1. For each new round, each JURY Block Producer \(JBP\) picks a secret number from 0 to M-1.
@@ -307,7 +307,7 @@ The protocol allows players to conduct a card game remotely without trusting a t
 - Started developing small games like Dice on EOS Smart-Contracts.
 
 ### Q2 2018
-- Listing of TRUE tokens on several exchanges.
+- Listing of TDP tokens on several exchanges.
 - Proof-of-concept launch of all Ethereum based games on Ropsten testnet.
 - BlackJack will go live first on Ropsten in May 2018.
 - Followed by, Roulette will be live for public in end of May 2018.
@@ -317,7 +317,7 @@ The protocol allows players to conduct a card game remotely without trusting a t
 
 ## JURY in the making
 ### Q3 2018
-- EOS will go live in Q3 2018 and TRUE tokens will be migrated to EOS from Ethereum.
+- EOS will go live in Q3 2018 and TDP tokens will be migrated to EOS from Ethereum.
 - JURY development will get started.
 - Our custom EOS implementation for JURY will get permissions.
 - DRNG \(Decentralized Random Number Generation\) functionality development will start for JURY.
@@ -359,7 +359,7 @@ The protocol allows players to conduct a card game remotely without trusting a t
 ### Year 2020
 - A true decentralized revolution will ignite due to evolutionary TrueDeck casino-as-a-service feature.
 - The advent of “Street Casinos” will start to spread on a global level.
-- Both tokens TRUE and SUIT will be in high demand and with good trading volumes on exchanges.
+- Both tokens TDP and SUIT will be in high demand and with good trading volumes on exchanges.
 
 ## Supremacy
 ### Year 2021
