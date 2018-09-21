@@ -121,9 +121,6 @@ There have been several incidents of tampering with RNG mechanisms where they ar
 ### TrustFree
 TrueDeck is coming up with mechanism and developing technologies which will ensure 100 percent trust for its players. The TrustFree mechanisms have been introduced for the better due to the transparency issues faced with “RNG mechanism”. Players can conduct game play as in a real world poker room without relying on a third party while playing on TrueDeck platform!
 
-### Anonymous
-In order to minimize the entry barrier for the billions, TrueDeck casino will not have any registration or know-your-customer requirement ever therefore 100% anonymity. Instead player will be using a wallet with self-sovereign identity. Players can simply bring their funds, make the bet & collect the winnings straight into their wallet.
-
 ### Secure
 Smart-Contracts are only smart when the creator have considered all vulnerabilities. But still, Smart-Contracts are not as smart as you think as described on [bitcoinist.com](http://bitcoinist.com/smart-contracts-might-not-smart-think/) and [bloomberg.com](http://bitcoinist.com/smart-contracts-might-not-smart-think/). There have been many incidents where hackers have drained the funds held by Smart-Contracts. Even some bounties for successfully attacking a project has been won by hackers, where project owners claimed their Smart-Contracts are 100% secure and have been audited by experts. TrueDeck developers are aware of this fact, that’s why all TrueDeck Smart-Contracts will undergo a rigorous byte-code level audit to ensure they're 100% secure.
 
@@ -148,7 +145,6 @@ On TrueDeck Platform, anyone with enough TDP and SUIT tokens can open their own 
 | On-chain Gameplay | - | Off-chain or lightning | Truly On-chain |
 | Free Withdrawal/Deposit | No | TX Fees | Free |
 | Withdrawal/Deposit Delay | Days | Minutes | Seconds |
-| 100% Anonymity | No | Yes | Truly |
 | Random Number Based | Yes | Yes | No |
 | Fairness Check | No | Yes | Not Required |
 | Absence of Trusted Third Party | No | No | Yes |
