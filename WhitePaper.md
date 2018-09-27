@@ -105,9 +105,6 @@ TrueDeck primary focus is to build a platform rather than only one casino. The p
 ### TrueDeck Casino & Marketplace
 Despite TrueDeck being a platform, it will be launching its own official casino with 0% house edge and rake free games. In order to expand this market to billions, TrueDeck Marketplace will facilitate the launch of new casinos by offering development services for casino games customization.
 
-### Passive Income Source
-TrueDeck tokens will be the true investment assets. We have created fair profit making mechanisms for its token holders. For this purpose, TDP tokens have been given unique staking utility **“SUIT token mining”**. Not only that, SUIT tokens will also have bankroll staking utility to provide bankroll to TrueDeck platform. Using these utilities TDP token holders can earn a good amount of passive income by supporting TrueDeck platform.
-
 ### Shared Bankroll, Large Payouts
 All TrueDeck Platform Casinos will share the same bankroll creating the largest casino network. Large bankroll means mega jackpots and more players. Shared bankroll also eliminates the liquidity problem for a new casino. Through TrueDeck even new casinos can attract large player base.
 
@@ -154,33 +151,10 @@ On TrueDeck Platform, anyone with enough TDP and SUIT tokens can open their own 
 TrueDeck will be having a marketplace of Casino dapps developed by individual developers and TrueDeck Dev team.  Casino owner will have a wide variety of dapps to chose from. They can also buy services of developers and designers to develop new games or customize the existing ones. Payments for these services can only be made in SUIT tokens.
 
 # Token Mechanism
-TrueDeck will have a 2-tier token mechanism.
 
 ### TDP Token
 TDP token is the governance token of TrueDeck Platform, just like EOS token is for EOS Blockchain.
-* Total Supply: 200,000,000 TDP
-* ERC20 & Proof-of-Stake token
-
-### SUIT Token
-SUIT Token will be the default payment mode for TrueDeck Casino & Marketplace. SUIT can only be created via activating the utility of the TDP tokens. On the official launch of TrueDeck platform, TDP token holders will be able to activate this utility and start to generate SUIT tokens. The idea for a separate SUIT token is to provide a stable token to TrueDeck platform. SUIT token supply will be regulated by the *“Mining Smart-Contract”* to maintain a stable value.
-
-### SUIT Token Mining
-TDP token holders can generate new SUIT tokens by locking/staking TDP tokens in a “Mining Smart-Contract”. Locked TDP tokens cannot be traded or transferred.
-
-The “Mining Smart-Contract” will work as follows:
-1. A TDP token holder locks a number of TDP tokens in the Smart-Contract.
-2. Locked TDP tokens cannot be traded or transferred.
-3. The holder can specify the lock period.
-4. The amount of SUIT tokens created depends on the length of the lock period and the total amount of SUIT tokens in the market.
-5. The Smart-Contract applies the selected lock duration to a formula that is designed to regulate the total market supply of SUIT tokens to provide a stable value to SUIT token.
-6. Prior to locking their TDP tokens in the Smart-Contract, users will be able to see exactly how many SUIT they will receive as a result of executing the locking transaction.
-7. SUIT tokens will be generated proportionally over the lock duration and have to be claimed.
-8. Once the lock expires, the locked TDP tokens will return to its holder.
-9. There will be no limit to a number \(other than duration\) for how many times TDP tokens may be used to create SUIT.
-10. There is also no limit to a number of TDP tokens that can be locked.
-
-### Bankroll Staking
-A casino requires a significant bankroll to payout players when they hit a jackpot. In the long run, casino always wins due to the mathematical advantage and make a good profit. TrueDeck being a decentralized casino will have a bankroll supported by SUIT token holders and profit will be equally distributed to those who staked SUIT tokens in a “Bankroll Smart-Contract”.
+* Total Supply:
 
 ### Casino as a Service
 Using TrueDeck platform “Casino as a Service”, anyone would be able to launch their own casino. They can use existing casino dapps or customize them according to their need by hiring designers & developers from the TrueDeck marketplace. In order to open a casino, one will have to stake TDP tokens to acquire enough network bandwidth for its casino. Certain amount of SUIT tokens will also be mandatory to stake in “Bankroll Staking Utility”. This will also increase the public TrueDeck bankroll, hence bigger prizes to players.
