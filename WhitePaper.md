@@ -154,7 +154,7 @@ TrueDeck will be having a marketplace of Casino dapps developed by individual de
 
 ### TDP Token
 TDP token is the governance token of TrueDeck Platform, just like EOS token is for EOS Blockchain.
-* Total Supply:
+* Total Supply: 200,000,000 TDP
 
 ### Casino as a Service
 Using TrueDeck platform “Casino as a Service”, anyone would be able to launch their own casino. They can use existing casino dapps or customize them according to their need by hiring designers & developers from the TrueDeck marketplace. In order to open a casino, one will have to stake TDP tokens to acquire enough network bandwidth for its casino. Certain amount of SUIT tokens will also be mandatory to stake in “Bankroll Staking Utility”. This will also increase the public TrueDeck bankroll, hence bigger prizes to players.
