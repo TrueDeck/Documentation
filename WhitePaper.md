@@ -443,8 +443,11 @@ TrueDeck was a mere thought when we had started working on the idea. But we had 
 TrueDeck had undergone a "private seed round" in January 2018. We conducted the private seed round in January 2018. We agreed on giving 10 million TDP (5% of the total supply) with 5 months of locking period. After locking period, tokens were credited to partner wallets.
 
 **Private seed round details:**
+
 When: January 2018
+
 Tokens: 10 million TDP (5% of the total supply)
+
 Locking period: 5 months
 
 In future, TrueDeck will conduct further rounds to raise additional funding when required.
