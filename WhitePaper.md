@@ -51,16 +51,16 @@
 ---
 
 ### Vision
-**To be the world’s largest casino platform by reshaping the standard of the online casino industry.**
+To be the world’s largest casino platform by reshaping the standard of the online casino industry.
 
 ### What is TrueDeck
-**TrueDeck is a unified blockchain-based platform built for the online casino industry. TrueDeck provides a medium of exchange for all actors involved i.e. players, developers, operators etc. Instead of being a blockchain counterpart of online casino businesses, TrueDeck aims to provide better tools, business insights and infrastructure which enables them to provide better experience to players while reducing cost.**
+TrueDeck is a unified blockchain-based platform built for the online casino industry. TrueDeck provides a medium of exchange for all actors involved i.e. players, developers, operators etc. Instead of being a blockchain counterpart of online casino businesses, TrueDeck aims to provide better tools, business insights and infrastructure which enables them to provide better experience to players while reducing cost.
 
 ### Mission
-**To create a robust but simple protocol which leverages Smart-Contracts and Blockchain, coupled with Data Science, to provide services within the online casino industry and beyond, that have so far not been envisaged.**
+To create a robust but simple protocol which leverages Smart-Contracts and Blockchain, coupled with Data Science, to provide services within the online casino industry and beyond, that have so far not been envisaged.
 
 ### Values
-**TrueDeck values transparency, decentralization, compliance and community above all else.**
+TrueDeck values transparency, decentralization, compliance and community above all else.
 
 ---
 
@@ -437,14 +437,24 @@ Kickstarting any crypto project takes a lot of effort & resources. The foundatio
 
 Raising large funding round would have enforced needless stress and financial obligations. Launching an ICO could have also restricted the project adaptability in various stages of it's development.
 
+TrueDeck (TDP) Token will be used in token sales to raise funding. TDP token is not equity entitlement and should only be bought to be a part in future of TrueDeck platform. TDP token is a utility token and does not carry any use-case outside the TrueDeck platform.
+
+**TDP Token Specification:**
+
+Total Supply | Private Seed | Team (Escrow)
+:---: | :---: | :---:
+200 million | 5% | 95%
+
+
 ### Private seed
 TrueDeck was a mere thought when we had started working on the idea. But we had a working concept ready within a couple of weeks. Instead of raising funds through Initial Coin Offering (ICO), we had raised a small amount. With that amount, we built a strong foundation by putting together a great team and started working on our proof-of-concept games.
 
 TrueDeck had undergone a "private seed round" in January 2018. We conducted the private seed round in January 2018. We agreed on giving 10 million TDP (5% of the total supply) with 5 months of locking period. After locking period, tokens were credited to partner wallets.
 
 **Private seed round details:**
+
 When | Tokens | Locking
---- | --- | ---
+:---: | :---: | :---:
 January 2018 | 10 million TDP | 5 months
 
 In future, TrueDeck will conduct further rounds to raise additional funding when required.
