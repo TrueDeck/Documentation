@@ -1,345 +1,455 @@
 # TrueDeck WhitePaper
 
-**March 20, 2018**
+**October 13, 2018**
 
-# Abstract
-**TrueDeck is a decentralized casino platform to develop transparent casino games.** TrueDeck leverages Smart Contracts & Blockchain technology to provide truly transparent and cryptographically secured casino experience. At TrueDeck, we are developing **TrustFree Technologies** like Decentralized Random Number Generation \(DRNG\) and Mental Poker protocol using smart contracts to eliminate trusted third parties. **That will enable players to conduct gameplay without being dependent on a third party.**
+<!-- MarkdownTOC depth=2 autolink=true bracket=round list_bullets="-*+" -->
 
-In future, TrueDeck will evolve to **an open protocol and a building block for decentralized casinos**. TrueDeck will be a marketplace of various casino game dapps, designers and developers. Entrepreneurs can open their own casino by staking a certain amount of tokens to the public bankroll. They can purchase various casino game dapps or hire designers/developers on TrueDeck marketplace to customize their casino. All TrueDeck casino dapps will be using the common public bankroll. Large bankroll will result in mega jackpots and more players, which will lead to more profit to the bankrollers. Hence, **TrueDeck will be a self-sustained network of decentralized casinos.**
-
-Global online gambling market accounts to 51.96 billion dollar in 2018 and is increasing by 10% year-to-year. Thus, decentralized casinos have a lot of potential in upcoming years. **TrueDeck wants to disrupt this industry by providing an open protocol for decentralized, transparent and trustfree casino network.**
-
-<!-- MarkdownTOC depth=4 autolink=true bracket=round list_bullets="-*+" -->
-
-# Table of Contents
-- [Introduction](#introduction)
-  * [The History of Gambling](#the-history-of-gambling)
-  * [Problems of Online Gambling](#problems-of-online-gambling)
-- [The TrueDeck Solution](#the-truedeck-solution)
-- [TrueDeck - True Potential](#truedeck---true-potential)
-  * [TrueDeck Platform](#truedeck-platform)
-  * [TrueDeck Casino](#truedeck-casino)
-  * [TrueDeck Marketplace](#truedeck-marketplace)
-- [Token Mechanism](#token-mechanism)
-- [Market Analysis & Strategy](#market-analysis--strategy)
-  * [Market Size](#market-size)
-  * [Consumer Analysis](#consumer-analysis)
-  * [Marketing Strategy](#marketing-strategy)
-- [JURY - The Backbone](#jury---the-backbone)
-- [TrueDeck & JURY Governance](#truedeck--jury-governance)
-- [TrueDeck Solution in detail](#truedeck-solution-in-detail)
-  * [Decentralized Random Number Generation \(DRNG\)](#decentralized-random-number-generation-drng)
-  * [Mental Poker Protocol](#mental-poker-protocol)
-- [Roadmap](#roadmap)
+# Contents
+- [Disclaimer](#disclaimer)
+- [Vision](#vision)
+- [A note on Regulation and Compliance](#a-note-on-regulation-and-compliance)
+- [Abstract](#abstract)
+- [Background](#background)
+- [Introduction to TrueDeck](#introduction-to-truedeck)
+  * [Online gambling and the Blockchain](#online-gambling-and-the-blockchain)
+  * [Objectives](#objectives)
+  * [The solution and benefits](#the-solution-and-benefits)
+- [Platform](#platform)
+  * [Layers](#layers)
+  * [Technology](#technology)
+	+ [Modules](#modules)
+	+ [Selection of Blockchain](#selection-of-blockchain)
+	+ [Storage](#storage)
+  * [Entities](#entities)
+  * [Tokens](#tokens)
+- [Development Plan](#development-plan)
+  * [Proof of concept](#proof-of-concept)
+  * [Platform development](#platform-development)
+  * [Ongoing research](#ongoing-research)
+- [Token Sale](#token-sale)
+- [Conclusion](#conclusion)
 
 <!-- /MarkdownTOC -->
 
-# Introduction
-A casino is a business entity which houses and accommodates certain types of gambling activities and makes money due to its house edge. Therefore, Casinos are most commonly built near or combined with hotels, restaurants, retail shopping, cruise ships or other tourist attractions to attract more players. There is much debate over whether the social and economic consequences of casino gambling outweigh the initial revenue that may be generated. Some casinos are also known for hosting live entertainment events, such as stand-up comedy, concerts, and sporting events.
-There have been many efforts to combat the house edge. Some strategies are based on skills and a few are controversial. Card counting has been one of them. Card counting is a casino card game strategy used primarily in the blackjack family of casino games to determine whether the next hand is likely to give a probable advantage to the player or to the dealer. Card counters are a class of advanced players, who attempt to decrease the inherent card house edge by keeping a running tally of all high and low valued cards seen by the player. Card counting allows players to bet more with less risk when the count gives an advantage as well as minimize losses during an unfavorable count. Card counting also provides the ability to alter playing decisions based on the composition of remaining cards. However, card counting has been considered illegal and against gambling law.
+# Disclaimer
+*This document is a working document and will be reviewed and updated throughout the course of the development of the platform. TrueDeck Ltd reserves the right to update the information contained within this document, at its discretion. The latest version will always be available at http://truedeck.io.*
 
-## The History of Gambling
-> "Zeus, Hades and Poseidon are said to have split the Universe by sharing heaven, hell and sea with the throw of the dice.”
+*This high-level whitepaper sets out Truedeck Ltd. as a business, outlines its products, current and future developments including the TrueDeck Platform and TrueDeck ecosystem. This whitepaper is for information purposes only and is not a statement of future intent. Unless otherwise specified, the products set out in this paper are currently under development and are not currently in deployment. Through this whitepaper, Truedeck Ltd. outlines the strategies being implemented and products developed to ensure success. However, Truedeck Ltd. makes no warranties and no person is entitled to rely on the contents of this paper or any inferences drawn from it, including in relation to any interactions with TrueDeck or the technologies mentioned in this paper. TrueDeck Ltd rejects any and all liability for any loss or damage of any kind \(whether foreseeable or not\) which may arise from any person acting on any information and opinions relating to TrueDeck, the TrueDeck Platform or the TrueDeck Ecosystem; as contained in this paper or any information which is made available in connection with any further enquiries, notwithstanding any negligence, default or lack of care.*
 
-Gambling is one of the oldest known pursuits of mankind. Archeological evidence suggests that even the earliest caveman was a gambler. Dice-like objects made from the ankle bone of a sheep or dog called “Astragali” dating back 40,000 years have been found. Cave drawings depicting gambling offer further proof of the existence of early gamblers. Pairs of dice have even turned up in the ruins of Pompeii, some of them "loaded" to fall a certain way.
+*Trudeck Ltd. does not encourage the buying of TDP tokens with the intention of short-term speculative investment. TDP tokens do not represent equity entitlement. TrueDeck tokens should be bought by those individuals who wish to be a part of the ecosystem. They must believe in the future of online casino industry for which TrueDeck is laying the foundation today.*
 
-Gambling involves risking something of value on an uncertain event in hopes of winning something of greater value. Americans point to Las Vegas, but it is common worldwide and occurs at gas stations, church halls, and casinos, including those offshore and online. It is more popular than ever thanks to multi-million dollar winners, sports fantasy leagues, and World Series of Poker tournaments on televisions. Gambling begins with a wager. Games such as slot machines and keno ask for a fixed amount to play. Casino table games such as poker or baccarat require a minimum bet to participate, and they may or may not have betting limits.
+*The information contained in this publication is derived from data obtained from sources believed by TrueDeck Ltd to be reliable and given in good faith, but no warranties or guarantees, representations are made with regard to the accuracy, completeness or suitability of the information presented. It should not be relied upon, and shall not confer rights or remedies upon, you or any of your employees, creditors, holders of securities or other equity holders or any other person. The opinions reflected herein may change without notice.*
 
-Online gambling includes poker, casinos and sports betting. The first online casino was in 1994. Many countries restrict or ban online gambling, but it is legal in some provinces in Canada, most countries of the European Union and several nations in the Caribbean. The Internet has made way for new types of gambling to form online. Improvements in technology have changed betting habits just as video lottery terminals, keno and scratchcards changed the gambling industry in the early 20th century.
+*TrueDeck Ltd, its directors, employees, contractors and representatives do not have any responsibility or liability to any person or recipient \(whether by reason of negligence, negligent misstatement or otherwise\) arising from any statement, opinion or information, expressed or implied, arising out of, contained in or derived from or omissions made from or in this paper. Neither TrueDeck Ltd nor its advisors has independently verified any of the information, including the forecasts, prospects and projections contained in this paper. All information has been researched according to the current marketplace and business landscape. Whilst every effort has been made to ensure that statements of facts made in this paper are accurate, all estimates, projections, forecasts, prospects, expressions of opinion and other subjective judgments contained in this paper are based on assumptions considered to be reasonable as of the date of the document in which they are contained and must not be construed as a representation that the matters referred to therein will occur.*
 
-## Problems of Online Gambling
-### House Edge
-For online casinos, most of the profit comes from the “House Edge”. The House Edge is the mathematical advantage that the casino has over you as you play. This makes casinos profitable by assured returns over the time. And this advantage is impossible to beat even for skilled players. The house edge is different for each game. Most games have house edge around 5-7%. Online casinos have the same house edge as physical casinos, whereas they don’t provide such pleasures as physical casinos. Still, they account for the same profit. Decentralized casinos can decrease this to a fair level.
+*Any plans, projections or forecasts mentioned in this paper may not be achieved due to multiple risk factors, including without limitation: defects in technological developments, legal or regulatory exposure and changes, market volatility, sector volatility, corporate actions, or the unavailability of complete and accurate information. This being said, all measures are being taken to ensure Truedeck Ltd. produces the best possible technology, which is compliant across jurisdictions.*
 
-### Deposit and Withdrawal fees
-Fiat currencies are hard to handle due to so many third parties and regulators. They take their chunk of profit for providing this service. Whereas they just only exchange IOUs between them which happens all digitally. This makes online gambling an expensive industry and a high entry barrier for new and small players. Cryptocurrency will enable decentralized casinos to reach the masses due to very low or no fees at all.
+*TrueDeck Ltd may provide hyperlinks to websites of entities mentioned in this paper, however the inclusion of a link does not imply that TrueDeck Ltd endorses, recommends or approves any material on the linked page. Such linked websites are accessed entirely at your own risk. TrueDeck Ltd does not accept responsibility for any such material, nor for consequences of its use.*
 
-### Transparency
-Transparency is the major problem for online casinos. Every online platform poker room in the World today ‘manufactures’ virtual playing cards with a computer random number generator program \(RNG\).  Search the term “poker is rigged” and you soon realize that many people do not trust a computer-generated deck of cards to deal a true game of poker, or indeed any online game that uses playing cards as a gambling instrument. 
+*This paper is only available on http://truedeck.io and may not be redistributed, reproduced or passed on to any other person or published, in part or in whole, for any purpose, without the prior, written consent of TrueDeck Ltd. The manner of distributing this paper may be restricted by law or regulation in certain countries. Persons into whose possession this paper may come are required to inform themselves about and to observe such restrictions. By accessing this paper, a recipient hereof agrees to be bound by the foregoing limitations. Truedeck Ltd. is not liable for any litigation that may arise from the unlawful redistribution, reproduction, or publication - in part or as a whole.*
 
-To make large profits, online casinos can rig the odds to increase the house edge significantly. They don’t provide any way of checking the transparency. Fairness check has been conceptualized to introduce transparency in online casinos. But it has its own flaws and it’s hard for an end user to verify the fairness. Fairness check has its own loops and casinos have used it to deceive players looting their hard-earned money. Here is the case of 999dice.com at [ccn.com](https://www.ccn.com/bitcoin-whale-gambler-says-99-9-dice-100-scam/) and [bitcointalk.org](https://bitcointalk.org/index.php?topic=948965).
 
-It is estimated that 1 in 3 gamblers do not trust RNG. It surprises people when they realize that a deck of playing cards is the only true random number generator when it comes to card games. Playing cards were invented over 1,000 years ago. Mathematicians state that the chance of anyone shuffling two decks of cards in the same way is infinitesimally small.  The number of permutations of a deck of cards are over eighty unvigintillion. But it’s an another problem to make honest shuffling of deck remotely without any trusted third party.
 
-# The TrueDeck Solution
-**By allowing data to be disseminated without being copied, blockchain technology is a game-changing evolution in payment security, designed for the digital-first consumer.** Developed as the underlying security system for bitcoin transactions, its database has no single point of entry through which it can be accessed by hackers and so information in a blockchain is securely shared without the risk of leakage.
+# Vision
+**To be the world’s largest casino platform by reshaping the standard of the online casino industry.**
 
-In the last nine months of 2016, USD1.4 billion was invested globally in blockchain startups, with merchants in every industry excited by the technology’s possibilities. For online gambling operators, this offers lower costs and improved customer trust. It could also decentralize the industry and cause the biggest single disruption in the history of online gambling.
+# What is TrueDeck
+**TrueDeck is a unified blockchain-based platform built for the online casino industry. TrueDeck provides a medium of exchange for all actors involved i.e. players, developers, operators etc. Instead of being a blockchain counterpart of online casino businesses, TrueDeck aims to provide better tools, business insights and infrastructure which enables them to provide better experience to players while reducing cost.**
 
-**At TrueDeck, we are primarily focusing to solve the transparency problem and to provide an open protocol for decentralized casinos.** Generating true random number is a hard task for blockchain. This poses a great problem for decentralized gambling games being implemented on blockchain. Fairness check for provably random numbers is being implemented by many blockchain casinos, also known as “provably fair” but it still has some flaws and exploit user experience towards the game. To an end user, it’s a hurdle to provide a random seed each time to play the game and fairness check makes no sense as an average player does not know much about cryptography.
+# Mission
+**To create a robust but simple protocol which leverages Smart-Contracts and Blockchain, coupled with Data Science, to provide services within the online casino industry and beyond, that have so far not been envisaged.**
 
-The solution can be sectioned for two areas:
-* Random Number Generation for games based on chance \(Dice, Roulette, Slot etc.\)
-* Trustfree protocol for games based on skill and strategy \(Poker, Blackjack etc.\)
+# Values
+**TrueDeck values transparency, decentralization, compliance and community above all else.**
 
-### Decentralized Random Number Generation
-Decentralized Random Number Generation is an algorithm to generate a random number collaboratively where each participant has influence over the final number. It has many advantages over RNG mechanism, which is currently being used by many blockchain casino and jackpot lotteries. Previously, RNG mechanisms has been tempered for looting innocent people money. Also, there is no need of fairness check, as the random number is picked up collaboratively, so no single entity can tamper it to make it in their favor. Read more about it in [here](#decentralized-random-number-generation-drng).
 
-### Mental Poker Protocol
-In 1978 cryptographers Adi Shamir, Ron Rivest and Leonard Adleman published a paper which proposes an encryption scheme and communications protocol that allows two people at different locations to shuffle and deal cards without involving any third party. 
-Mental Poker Protocol encrypts the deck so the cards are unreadable to any single player. To ensure fair shuffling of the cards, every player in the game shuffle the deck. The protocol allows each card be opened by one, some or the entire group. These features allow to create all variations of card games like Poker, Blackjack etc. Read more about it [here](#mental-poker-protocol).
+# A note on regulation and compliance
+The online gambling industry has grown and changed over the last 20 years. TrueDeck is committed to helping this industry by providing game-changing technology which provides entertainment, but most importantly builds trust. 
 
-Both **Decentralized Random Number Generation** and **Mental Poker Protocol** require enormous amounts of computational power and communications resources. So what will make us provide a blockchain solution for both problems? The answer is **sub-second confirmation blockchain implemented using EOSIO software** that will be able to achieve **5k transactions per second**. **EOSIO software will provide real-time on-chain performance to TrueDeck**.
+The legal and regulatory landscape has also evolved and will continue to evolve as time goes by. At TrueDeck, we are not only reshaping the standard but aiding in the progression and implementation of best-practices across the gambling world using blockchain technology. TrueDeck wants to become a key contributor in redeveloping the technological body of this industry from ground up while adhering to the standards set by law and respect existing jurisdictional laws, even at the detriment of platform adoption, if necessary.  
 
-# TrueDeck - True Potential
-**TrueDeck platform has the true potential to make gambling in reach of billions.** As mentioned above, there are so many restrictions which creates a huge entry barrier for new players to join online gambling industry. Current online casinos are unable to provide the right solutions to make it to masses. TrueDeck is committed to provide these solutions and to remove all hurdles that come in a way of an average gambling lover.
+Our team is based around industry veterans, who have pledged to help the evolution of the TrueDeck platform and its features to provide ground-breaking, open, fair and economically-sustainable products for businesses, developers and players alike. 
 
-## TrueDeck Platform
-TrueDeck developers are working on ground-breaking technologies and bringing innovation to the gambling industry. TrueDeck platform will be open-source and fully transparent. The platform will comprise a number of technologies which will facilitate the development of complex gambling games.
+For the reasons stated above, TrueDeck aims to partner with leading global providers of age and identity verification solutions to ensure compliance to KYC/AML needs and perform  due diligence of corporate social responsibility to protect minors from underage gambling.
 
-### For Casino Owners
-TrueDeck Platform will be a **“Casino-as-a-service”** where anyone with enough TDP tokens will be able to create his own casino over TrueDeck platform. **Casino can be deployed with just a few clicks.** The operator can choose to have only specific casino games from TrueDeck Marketplace and pay only for those games. The casinos will share the same features TrueDeck platform provides. However, Casino owners will be free to decide their own parameters like house edge, rake, commission, fees etc. They can also opt to support any cryptocurrency for their casino.
 
-### For Developers & Designers
-Developers & designers will be able to provide their services on TrueDeck Marketplace to develop new casino games or customize the existing ones according to the casino owner needs.
+# Abstract
+TrueDeck is an online casino platform to enable operators, developers and players to interact transparently through blockchain. TrueDeck leverages Smart Contracts & Blockchain technology to provide a truly transparent and cryptographically secured casino experience. The platform caters to online gambling businesses and entities i.e. casino operators, gaming solution providers, affiliates and players. The platform intends to be a “one-stop shop” for all services related to online gambling that includes but not limited to blockchain-hosted games, KYC/AML services, smart contract based bankroll management, data intelligence, crypto payment gateway integration and games from leading gaming solution providers.
 
-### For Players
-Players will get a variety of options to play in different casinos and different games. All TrueDeck Platform Casinos  will share a common TrueDeck bankroll. That will enable mega jackpots and big rewards to the players without any middleman. Winnings will go straight into the players’ wallet.
+TrueDeck token is the cryptographic asset that will be sold during the development journey of TrueDeck in order to collect enough resources that can help TrueDeck achieve its milestones. TrueDeck tokens should be bought by those individuals who wish to be a part of the ecosystem. They must believe in the future of online casino industry for which TrueDeck is laying the foundation today.
 
-*Learn more about TrueDeck Marketplace [here](#truedeck-marketplace).*
+Over the time, man has found a million different ways to gamble, even at gas stations, bars, open fields, casinos and even the virtual world since the start of the millenium. But the actors involved in this industry still faces many problems; being cheated by rigged odds, long delays in payments, security of funds, stress of being compliant to KYC/AML checks, round the clock availability to name a few. Although online gambling industry has enjoyed the benefits of recent developments in software industry to provide real-time gambling to millions of users, still legacy infrastructure keeps their mechanisms behind closed walls. 
 
-Below are the unique propositions that TrueDeck offers compared to its rivals:
-### Network of Casinos
-TrueDeck primary focus is to build a platform rather than only one casino. The platform provides protocol for others to build and operate casino. Anyone who wish to open a casino, can either use TrueDeck casino builder or customized one by using TrueDeck Marketplace offerings.
+With TrueDeck, operators, developers and players will witness a new way to gamble which provides the same experience but offers a great level of transparency and access to valuable insights. TrueDeck will aid online casino ecosystem to discover new possibilities by incorporating blockchain and getting it reshaped from ground-up.
 
-### TrueDeck Casino & Marketplace
-Despite TrueDeck being a platform, it will be launching its own official casino with 0% house edge and rake free games. In order to expand this market to billions, TrueDeck Marketplace will facilitate the launch of new casinos by offering development services for casino games customization.
+We believe the unified platform should cater all actors involved. The platform should be structured in such a way that the ecosystem can nurture itself in a self-governed way whilst maintaining complete harmony with the needs of all.
 
-### Shared Bankroll, Large Payouts
-All TrueDeck Platform Casinos will share the same bankroll creating the largest casino network. Large bankroll means mega jackpots and more players. Shared bankroll also eliminates the liquidity problem for a new casino. Through TrueDeck even new casinos can attract large player base.
 
-### Lowest House Edge, Rake Free Games
-TrueDeck Platform Casinos will compete with each other to attract more players by lowering house edge and offering better experience. Thus, TrueDeck platform will evolve into the best online gambling destination compared to its competitors. TrueDeck Official Casino will be committed to offer lowest house edge and rake free games.
+# Background
+Gambling is one of the oldest known pursuits of mankind. The first online casino went live in 1994. Over the past 20 years, the online gambling industry has rapidly grown to become a multi- billion dollar industry. Its history has been full of twist and turns and highs and lows, with each step helping to make it into the immense industry it is today. In 2018, the online gambling market is predicted to grow to $56.05 billion. Online gambling takes on many forms - Poker and other Casino games, Sportsbetting, Novelty betting, Bingo, Fantasy sports, among others. 
 
-### Transparent
-In TrueDeck platform, every single action is committed to the public blockchain, making the platform fully transparent. Unlike other online casinos, who keeps their random number generation mechanisms behind the wall. 
-There have been several incidents of tampering with RNG mechanisms where they are meant to be provably fair. One famous case can be found at [ccn.com](https://www.ccn.com/bitcoin-whale-gambler-says-99-9-dice-100-scam/) and [bitcointalk.org](https://bitcointalk.org/index.php?topic=948965). The mechanism to provide “fairness check” is a vague idea. To a user, who does not know much about cryptography, “fairness check” makes no sense.
+However, although advances have been made, there is a lack of unified standard within the industry which has lead to hacks or scams. Existing platforms do not offer enough transparency to players, and their trust is placed in the hands of auditors and gambling commissions who strive to ensure that trust is kept. Despite numerous and continued changes, there is still a scope for improvement using recent technological developments.
 
-### TrustFree
-TrueDeck is coming up with mechanism and developing technologies which will ensure 100 percent trust for its players. The TrustFree mechanisms have been introduced for the better due to the transparency issues faced with “RNG mechanism”. Players can conduct game play as in a real world poker room without relying on a third party while playing on TrueDeck platform!
+The idea was born when a group of people, with a background in online gambling industry and technology, came together to innovate the industry through blockchain. We wanted to create a protocol which makes predicting outcomes impossible and a platform which connects all the actors involved.
 
-### Secure
-Smart-Contracts are only smart when the creator have considered all vulnerabilities. But still, Smart-Contracts are not as smart as you think as described on [bitcoinist.com](http://bitcoinist.com/smart-contracts-might-not-smart-think/) and [bloomberg.com](http://bitcoinist.com/smart-contracts-might-not-smart-think/). There have been many incidents where hackers have drained the funds held by Smart-Contracts. Even some bounties for successfully attacking a project has been won by hackers, where project owners claimed their Smart-Contracts are 100% secure and have been audited by experts. TrueDeck developers are aware of this fact, that’s why all TrueDeck Smart-Contracts will undergo a rigorous byte-code level audit to ensure they're 100% secure.
+We started writing, planning and brainstorming the ideas which have gone into shaping TrueDeck. While several blockchain casino projects had implemented games through state-channels, TrueDeck has come up with innovative approach with real-time game speed. TrueDeck has been the first in the industry to come up with full decentralized architecture for the platform, whilst giving casino businesses complete power to define their own strategies.
 
-### Reliable
-Before the official launch, TrueDeck platform will be heavily tested in it’s beta for months to check the platform is consistently good in quality and performance. It will be load tested with heavy traffic to ensure the reliability even with millions of users.
+Other blockchain casinos focus on just creating a single casino or deploying independent games for different casinos, however the ground-breaking innovations of the TrueDeck platform will reform the entire online gambling industry.
 
-### Fast
-Despite TrueDeck is a blockchain casino and trustfree protocols will require enormous amounts of computational power & communications resources, users won't see any difference in speed and all the actions will be real-time.The deposits and withdrawals will also be lightning fast, charging nothing in fees. EOSIO Blockchain Software when developed completely will be able to achieve 5k transactions per second. That will be enough for a platform like TrueDeck. In future, if platform user-base grows further, TrueDeck could evolve into its own separate Blockchain based on EOSIO Software. 
+# Introduction to TrueDeck
+TrueDeck wants to reinvent the way online gambling industry operates. There are several impressive implementations by other blockchain casino projects, however TrueDeck is different because:
 
-EOS Blockchain is aiming to become a decentralized operating system. It will be somewhat a more focused product compared to Ethereum Blockchain. EOS is on its way to becoming the most widespread business and consumer oriented Blockchain platform, that works.
+- A unified platform which caters to all actors involved: players, developers, operators etc.
+- Provides complete decentralization from random number generation to payout distribution.
+- Has developed technology to provide blockchain casino dApps with real-time game speed.
+- Is the first casino platform running as a Decentralized Autonomous Organization.
+- Only the one which can save operators a significant amount in operational cost.
 
-Apart from features mentioned above, TrueDeck will be committed to provide ultimate satisfaction to players as well as great opportunities to casino owners & developers.
+TrueDeck will be working with existing online casinos to strengthen the foundation of online gambling industry, initiating an industrial wave to provide better and safer gambling experience to players.
 
-## TrueDeck Casino
-On TrueDeck Platform, anyone with enough TDP and SUIT tokens can open their own casino. But TrueDeck will be having it’s own casino “TrueDeck Casino” with lowest house edge and rake free games. On TrueDeck Casino, players will be able to play games using SUIT tokens only. Below is the comparison of other online casinos with TrueDeck Platform casinos.
+## Online gambling and the Blockchain
+Blockchain can be the real savior, iGaming industry was waiting for. It’s a match made in heaven. The synergies for demographic interest and the pain points that blockchain resolves for this industry, can’t be ignored. Despite the radical improvement in iGaming technologies, there is still a lot left to be disrupted. Blockchain technology will surely set the standard for future of iGaming.
 
-|  | **Online Casino** | **Blockchain Casino \(Ethereum\)** | **TrueDeck \(EOS\)** |
-| --- | --- | --- | --- |
-| House Edge | 0.1% - 1% | 0% - 1% | Imperfect Play |
-| Commission/Rake | 2.5% - 10% | 0% - 1% | Rake Free |
-| Login/Registration Required | Yes | In some | No |
-| On-chain Gameplay | - | Off-chain or lightning | Truly On-chain |
-| Free Withdrawal/Deposit | No | TX Fees | Free |
-| Withdrawal/Deposit Delay | Days | Minutes | Seconds |
-| Random Number Based | Yes | Yes | No |
-| Fairness Check | No | Yes | Not Required |
-| Absence of Trusted Third Party | No | No | Yes |
-| Casino Cheating Players | Possible | Still Possible | Impossible |
+But many blockchain casino projects have created smart-contracts to payout dividends to their token holders. Whereas TrueDeck is creating a value proposition to online casino businesses and its token holders. TrueDeck is strictly against paying dividends to its token holders, instead we have defined plenty of utilities around the token. TrueDeck has combined the best of what blockchain technology can offer, in order to create the ultimate platform to facilitate online gambling in a truly transparent manner.
 
-## TrueDeck Marketplace
-TrueDeck will be having a marketplace of Casino dapps developed by individual developers and TrueDeck Dev team.  Casino owner will have a wide variety of dapps to chose from. They can also buy services of developers and designers to develop new games or customize the existing ones. Payments for these services can only be made in SUIT tokens.
+### Setting the standard for the Online Gambling Industry
+With the advent of blockchain technology and its endless possibilities, online casino industry can voyage into a whole new era. In order to get the full exposure, the industry should join hands in defining a common standard. TrueDeck believes the following practices must be carried out by actors involved:
 
-# Token Mechanism
+### - Decentralized RNG
+A random number generation mechanism which is decentralized and completely unpredictable. Generation should be as per the industry standards; fast and fair. It should be provably verifiable and auditable by anyone. 
 
-### TDP Token
-TDP token is the governance token of TrueDeck Platform, just like EOS token is for EOS Blockchain.
-* Total Supply: 200,000,000 TDP
+### - Real-time Monitoring
+All actions should be public and monitored in real-time to detect any cheat or fraud. Random number generation should also be monitored real-time instead of a few checks in a year. 
 
-### Casino as a Service
-Using TrueDeck platform “Casino as a Service”, anyone would be able to launch their own casino. They can use existing casino dapps or customize them according to their need by hiring designers & developers from the TrueDeck marketplace. In order to open a casino, one will have to stake TDP tokens to acquire enough network bandwidth for its casino. Certain amount of SUIT tokens will also be mandatory to stake in “Bankroll Staking Utility”. This will also increase the public TrueDeck bankroll, hence bigger prizes to players.
+### Strong KYC/AML Checks
+Being the highly regulated industry, strong KYC & AML checks should be carried out by all entities involved. However the blockchain technology provides anonymity, but the actors involved should enforce these checks wherever applicable in support of “Responsible Gambling” standards and AML laws.
 
-# Market Analysis & Strategy
-Based on geographical regions, the report segments the global online gambling and betting market into Europe, Asia and Middle East, North America, which are analyzed in terms of revenue generation. Europe is divided into the U.K., Malta, Gibraltar, France, Spain, Italy, Germany and Rest of Europe while North America is further segmented into the U.S., Canada and Rest of North America. Asia is subdivided into China, Japan, Australia, Philippines and Rest of Asia Pacific. Also, Middle East is further segmented into South Africa, Nigeria and Rest of Middle East.
+### User Protection
+User data protection should be the utmost priority across this industry. Operators must have robust systems in place to keep their information safe. They should also comply with the laws enforced by the jurisdictions in which they operate.
 
-### Global Online Gambling Market Analysis
-Europe, Asia and Middle East being the biggest market will be the primary target for our customer acquisition. Our mission to make gambling in reach of billions will be possible if we make the platform scale to the global level. That’s why TrueDeck is being developed as a platform not as a single entity casino. It will be a whole ecosystem of Casino Owners, Investors, Developers & most importantly Players. TrueDeck intends to capture the most of this market through its transparency and fairness regarding House edge and commissions.
+### Security of players’ funds
+Online casino industry used to be loosely regulated, but has been transformed into a credible and thriving industry. Thus, it is most important to keep the players’ fund secured. Operators and gaming solution providers should come up with solutions to keep them secured from hackers and remove any vulnerability from their systems.
 
-## Market Size
-Since the gambling has gone online, it has seen astonishing growth. It has few reasons behind it like :
-1. Easy & Convenient to use.
-2. Fast and secure.
-3. Variety of games and casinos available to choose from.
-4. Multiple methods of payment are acceptable & much more.
+### Fast Deposits and Withdrawals
+Deposits and withdrawals has always been a dissatisfaction to players while playing games online. Despite internet banking has made the process much faster but it is expensive due to involvement of so many third parties. They take their chunk of profit for providing this service. Deposits and withdrawals should be faster and cheaper for easy on-boarding of new players. Still they should be processed in accordance with the AML laws.
 
-Innovation & technology has taken online gambling to another level where it used to be $2 billion industry in early 2000’s, now it has crossed even $50 billion and soon to be $60 billion in 2020.
+### Performance
+To keep up with the industry advancements, casino websites should strive for 99% uptime in order to provide best gaming experience to players. 
 
-Market research report identifies that the easing of government regulations will be one of the primary growth drivers for the global online gambling market till 2021. Few years back the US passed a law that allowed individual states to license online casinos and mobile casinos, sports books, and poker sites within their borders. Delaware, Nevada, and New Jersey are the three states in the US that allowed online gambling as of March 2017. It has been predicted that more states in the US may legalize the online gambling by 2020 due to the easing of laws by the federal government.
-The Singapore government exempted two online gambling service providers called Turf Club and Singapore Pools from Remote Gambling Act in September 2016. The primary advantage in legalizing of online gambling is that it increases employment opportunity and benefit the government in the form of tax. These advantages are expected to motivate governments around the globe to legalize online gambling. Technavio's market research analysts predict that this market will grow at a CAGR of more than 9% by 2021. The global online gambling market is gaining popularity in Middle East and Africa because online sites generate huge revenue for the government. Their significant contribution to the national revenue is encouraging several countries across the region to legalize online gambling.
+## Objectives
+TrueDeck wants to aid in reshaping the standard for online gambling industry, bringing forth new technology in order to establish a best-practice policy for the future. The entire objective of TrueDeck is to create a unified platform built on the foundation of Blockchain technology that implements all of the practices described above and set the standard for the future of this industry.
 
-In addition, the online gambling market has been expanding in the UK after the implementation of the gambling act of 2006. This in turn, will boost the market's growth throughout the projected period.Competitive landscape and key vendors. The global online gambling market is characterized by the presence of several vendors competing to gain market dominance. Some of the small vendors are operating only in specific businesses such as casino and lottery, while, other vendors are operating in multiple fields including to retail betting. The growth opportunity for these vendors is increasing due to the rise in the number of gambling premises across the world and the increase in the number of participants. Furthermore, the rapid advancement in technology and frequent changes in consumer preferences will strengthen the competitive environment of the market.
+TrueDeck does not seek to preside over the casino industry, but it wants to empower and strengthen every aspect of it. TrueDeck strives to develop a way to make online casino mechanisms transparent as well as a medium of exchange between all actors to facilitate the operations of online casino industry.
 
-## Consumer Analysis
-TrueDeck believes in transparency though we won't mislead you with some irrelevant stats to show consumer data. We will in fact want to explain you about the people invest their assets & time in Online Gambling. Due to variety of games both genders enjoy playing online Gambling. The rate of women consumer in Online Gambling is higher than Offline gaming due to safety issues. UK & USA are now the most participating countries in world. Whereas middle aged people invest maximum in Online Gambling.
-
-## Marketing Strategy
-Marketing is the social process by which individuals and groups obtain what they need and want through creating and exchanging products and value with others. If there’s an influential individual who touches all your customers and has a significant impact on the way those customers try to solve their problem, one of your strategies may be to focus on building a strong relationship with that influential individual or company. Thus, best marketing strategy would be to create a strong consumer focused product and create a word-of-mouth phenomena through those influential individuals.
-
-Our Marketing Strategy is simple & based on some principles like:
-* Awareness
-* Interest
-* Evaluation
-* Trail
-* Adoption
-
-Apart from this we are going to market from different resources. As TrueDeck is Online Gambling, the weigh towards Online Marketing would be more. The vision of TrueDeck is to spread awareness about Online Gambling & create a safe space for everyone to come and enjoy that. This kind of Market Strategy will helps us to connect more with our people. We will study market & through feedback receive what our client’s want & build up the same structure for them. There is no target audience for TrueDeck, anyone above legal age can come & play.
-
-# JURY - The Backbone
-JURY will be the backbone of TrueDeck platform. It will be a governed blockchain based on EOS.IO software with its own constitution. After so much research and testing, the idea of JURY has been conceived.
-
-JURY, as a blockchain will have following higher level purposes:
-* Fast Decentralized True Random Number Generation
-* Storage of IPFS links having game data
-
-Besides above purposes, Each JURY node will have following roles:
-* **Tracker or DHT node:** To facilitate peer-to-peer communication
-* **IPFS node:** To store the game data
-* **Analyzer node:** Game data analytics to prevent and detect cheating
-
-Being a governed blockchain, JURY will setup permission levels for each operation, so that only permitted entities can avail JURY services. But all data will be publicly visible for transparency and to verify the authenticity of actions. There will be following entities in JURY ecosystem:
-1. Juror
-2. Voter
-3. Applier
-
-### 1. Juror
-A Juror will be a node in JURY blockchain and candidate for Block Producers as in EOS blockchain.  When not elected as block producer, Juror will work as a full node. The elected block producers for each round will be responsible to participate in “Decentralized Random Number Generation”. All Juror nodes whether elected as block producer or not, will work as an IPFS and Analyzer node. Jurors will be rewarded for their services and hard investments done to scale the JURY ecosystem. As JURY will be a governed blockchain, Jurors will have to submit their candidacy to be selected as juror. The approval of candidacy will be decided by voters.
-
-### 2. Voter
-All TDP token holders will be able to vote to elect a Juror as a block producer. TDP token holders will be responsible to choose the right candidates to keep the system secure from possible attacks. Those attacks can affect the value of their stake in TrueDeck.
-
-### 3. Applier
-Applier could be an individual or business who will use services offered by JURY in an application. All TrueDeck Platform casinos and TrueDeck casino itself will be an “applier”. An applier will have to stake a certain amount to use these services. Each services like random number generation or IPFS game data logging could be charged but that would be cheaper than current service providers, also trustfree and transparent. 
-
-
-# TrueDeck & JURY Governance
-TrueDeck platform and JURY will be governed by TDP token holders. TDP Token holders will be able to vote on all TrueDeck platform decisions as well as JURY Block Producer selection. Locked TDP tokens will also be considered for voting.
-
-# TrueDeck Solution in detail
-Following is the detailed technical explanation of solutions offered by TrueDeck.
-
-## Decentralized Random Number Generation \(DRNG\)
-Random number generation is main purpose of JURY. JURY uses a decentralized and collaborative  “commit-and-reveal” algorithm to generate a TDP random number.
-
-The algorithm works like this:
-1. For each new round, each JURY Block Producer \(JBP\) picks a secret number from 0 to M-1.
-2. Each JBP appends a load of random gunk to its number and hashes the result with a secure hash.
-3. Each JBP commits their hash to a smart contract.
-4. When all JBP have committed the hash, each JBP reveals their secret number and random gunk, excepts the most voted JBP for that round.
-5. The most voted JBP will reveal their secret number in the last, after other JBPs have revealed. Most voted JBP will have a better reward but worse punishment too.
-6. A Smart-Contract verifies that the secret numbers and hashes match.
-7. Failure to reveal or unmatched hash will result in not being selected as JBP for the next round due to less votes. In this case, a new round is started.
-8. On successful match of hashes, the Smart-Contract will add all the secret numbers together modulo M, then adds 1 to get the final result to find the random number.
-
-*There could be some possible attacks to this algorithm, but we are working to minimize those attacks.*
-
-This random number can only be used by “Appliers” due to some permission levels set in JURY blockchain. The number will be quite big and can be used as seed to generate pseudo random numbers. A short random number will also be generated using this big random number to be used directly in many applications. So, end user can verify the authenticity of random number without much hassle on public block chain explorer.
-
-## Mental Poker Protocol
-The protocol allows players to conduct a card game remotely without trusting a third party. Each player encrypts the deck so the cards are unreadable to any single player. To ensure fair shuffling of the cards, every player in the game shuffle the deck. The protocol allows each card be opened by one, some or the entire group.
-
-# Roadmap
-
-## Research
-### Q3 2017
-- Research started on various decentralized approaches to create gambling games.
-- Finally going with server-client RNG mechanism to create first Proof-of-concept.
-- Development started to implement games on Ethereum Smart-Contracts.
-
-### Q4 2017
-- Work started on “TrustFree Technologies ” using which players will be able to play without any third party involvement.
-- Started researching on EOS as preferred blockchain platform for TrueDeck.
-- Testing started of Ethereum based BlackJack.
-
-### Jan 2018
-- Development started on “Mental Poker Protocol” implementation.
-- Started working on DRNG \(Decentralized Random Number Generation\).
-- Conceptualized JURY, a governed blockchain for DRNG and IPFS game storage.
-
-## Proof-of-Concept
-### Feb 2018
-- Development started on Ethereum based Roulette.
-- Making BlackJack ready for first Proof-of-concept launch.
-- Started development on EOS Smart-Contracts.
-
-### Mar 2018
-- Started developing Ethereum based Slots.
-- Testing started of Ethereum based Roulette and Slots.
-- Started developing small games like Dice on EOS Smart-Contracts.
-
-### Q2 2018
-- Listing of TDP tokens on several exchanges.
-- Proof-of-concept launch of all Ethereum based games on Ropsten testnet.
-- BlackJack will go live first on Ropsten in May 2018.
-- Followed by, Roulette will be live for public in end of May 2018.
-- After that, Slots will also be live in June 2018.
-- The conceptual framework of JURY will be finalized before starting development.
-- EOS versions for these games will be in development through out Q2 2018.
-
-## JURY in the making
-### Q3 2018
-- EOS will go live in Q3 2018 and TDP tokens will be migrated to EOS from Ethereum.
-- JURY development will get started.
-- Our custom EOS implementation for JURY will get permissions.
-- DRNG \(Decentralized Random Number Generation\) functionality development will start for JURY.
-- DHT \(Distributed Hash Tables\) implementation in JURY for Peer-to-Peer connections will start.
-- Embedding IPFS in JURY for storing game data and storing IPFS links on JURY.
-
-### Q4 2018
-- JURY will launch on EOS testnet for testing before public launch.
-- A rigorous testing program will be conducted on JURY to ensuring its not vulnerable to attacks.
-- Vulnerabilities will be fixed from feedback received from security audits.
-- Load tests will be performed to reflect millions of users.
-- Analyzer feature will be started for development.
-- Various methodologies will be developed to analyze game data to detect cheating and bot uses.
-- Candidacy submission will be opened for JBPs \(JURY Block Producers\) as governed entities.
-
-## TrueDeck AWAKENS
-### Q1 2019
-- TrueDeck v1.0 will launch on EOS main chain.
-- JURY v1.0 will also be launched as per official EOS.IO software guidelines.
-- SUIT token generation utility will be activated.
-- After official launch of TrueDeck platform, TrueDeck casino & marketplace will be launched.
-- Heavily testing of platform will begin for reliability and performance.
-
-### Q2 2019
-- The platform will be developed further for performance.
-- Ease-of-use functionality will be added to reduce the entry barrier for all platform participants.
-- More features will be added as requested by TrueDeck community.
-
-## Expansion
-### Q3 2019
-- Partnerships will be formed with different online casino operators and game development studios.
-- Promotion will begin to attract more players, developers and entrepreneurs to the platform.
-
-### Q4 2019
-- Several global casinos launches will commence with legal gambling licenses.
-- Transparency will make new players to adopt TrueDeck platform casinos.
-
-## Evolution
-### Year 2020
-- A true decentralized revolution will ignite due to evolutionary TrueDeck casino-as-a-service feature.
-- The advent of “Street Casinos” will start to spread on a global level.
-- Both tokens TDP and SUIT will be in high demand and with good trading volumes on exchanges.
-
-## Supremacy
-### Year 2021
-- TrueDeck will achieve superiority to all other blockchain casinos due to the true decentralization and transparency it offers. 
-- Eventually, other blockchain casinos will have to adopt TrueDeck platform as TrueDeck will be the standard for the online gambling industry.
 
+## The solution and benefits
+At TrueDeck, our focus is to create a platform to provide solutions for all actors of online casino industry; as well as potentially many satellite business sectors.
 
+TrueDeck platform will be developed in a way that it caters to the needs of all. The solution will bring following benefits to the entities involved:
 
+### Operators
+Operators can migrate their infrastructure to the TrueDeck platform and be assured of 99% SLA for coverage, as well as take advantage of huge savings on operational overheads. Outsourcing operational functions of business units with confidence in regulatory compliance and apex level performance is not only desirable, but it is what TrueDeck will offer. Innovating and evolving with the best in the business to set new best practice every day.
 
+**Benefits:**
+- Save money on RNG audits.
+- Reduces need of security & technical staff.
+- No chargebacks, Cheaper payment charges.
+- Market leading SLA for minimum downtime.
+- Lower compliance overheads amongst others.
+- No need to setup hardware or maintain cloud instances.
+- Integrated loyalty program and gamification functionality.
+- All-in-one Casino management interface with no additional cost.
+- Useful business insights and casino analytics to increase revenue and reduce cost.
+- Handful of games by leading gaming solution providers on TrueDeck Marketplace.
 
+### Developers
+Develop games for the future of the online gambling industry and sell your services on the TrueDeck Marketplace to leading operators. Use TrueDeck Platform SDKs to build and offer fair casino games using Blockchain technologies. 
 
+**Benefits:**
+- Provide casino games to operators that offer great transparency to players.
+- Exposure to a large base of operators on a single platform.
+- Build up your reputation on the marketplace by providing quality games.
+- Build and sell new games and services on the platform.
+- Expand your product line by offering blockchain based games.
+- Get “Platform Rewards” by contributing to the platform for mass-adoption.
 
+### Affiliates
+Affiliates have the opportunity to grow their affiliate business in blockchain casino space through TrueDeck.
+
+**Benefits:**
+- Join hands to promote the future of online gambling industry.
+- Transparent tracking of your player base and commission.
+- Attractive payment terms and instant payout governed by smart-contracts.
+- Get “Platform Rewards” by contributing to the platform for mass-adoption.
+
+
+### Players
+Players are the key actors TrueDeck platform will cater to. TrueDeck aims to make every part of this industry transparent, a thing that was thought to be impossible due to the legacy infrastructure of casino technology. Players now don’t have to trust licensed website badges and certificates that can be faked. They can now play casino games without worrying about the fairness of games which is being monitored in real-time by the platform validators.
+
+**Benefits:**
+- Fully trust that you are playing fair and random games.
+- Each action being validated by platform validators to detect any cheat in real-time and prevent the cheater from being successful.
+- Low friction compliance for platform on-boarding.
+- Platform wide coalition loyalty program and gamification experience.
+- Lower house edge and rake on all TrueDeck platform games.
+- Constantly innovative new games
+- Confidence for your funds being secured by smart-contracts.
+- No middlemen while depositing and withdrawing money, so cheap and fast withdrawals.
+
+
+### Workers and Providers
+Workers and providers perform the work assigned to them continuously. In return of their service, workers are rewarded with platform native tokens either through the platform fund. Providers get paid by consumers in TDP tokens as per their quoted fees in marketplace. Read more about workers and providers in “Entities” section.
+
+**Benefits:**
+- Opportunity to secure the platform which will be the key contributor in the future of online casino industry.
+- Good and regular compensation for your service to the platform.
+- Ease of deploying worker machines on cloud or on-premise facility.
+- Free market for providers like Identity, Gaming, Payment solution providers etc.
+- Open elections for elected worker slots to be volunteered by any individual or organization.
+- Transparent, fair and decentralized election process.
+
+
+## Platform
+Many other projects in this space are trying to launch a single decentralized casino that caters only to players. Over time, decentralized casinos will take down the online casino industry. Whereas TrueDeck is creating a unified platform which caters to all actors involved. 
+
+The TrueDeck platform will facilitate existing online casinos to offer blockchain based casino games. The platform will enable online casino businesses to reduce their operational cost significantly. Thus, they will be able to lower the house edge in order to compete with edgeless or zero-edge decentralized casinos.
+
+The TrueDeck platform comprises of numerous technologies which will facilitate:
+- the operations of online casinos,
+- the development of casino games,
+- the management of casino affiliate programs,
+- and the gambling for players improving their experience.
+
+TrueDeck team is working on some ground-breaking concepts to scale and speed up the platform to meet the needs of global online casino industry and to bring continuous innovation.
+
+
+### Layers
+Let’s dig into the layers of TrueDeck platform, which are defined in such a way that platform is robust, rapidly scalable and easy to maintain.
+
+The TrueDeck platform has divided into following primary layers:
+1. Core Layer
+2. Services Layer
+3. Applications Layer
+4. Interface Layer
+
+
+### 1. Core Layer
+  The “Core Layer” is the foundation of TrueDeck Platform. The core layer provides several functions i.e. identity management, on-chain governance, worker management, proposal management etc. TrueDeck platform will be adaptable to changes as agreed by DAO through on-chain governance model. This layer hosts smart-contracts that carries out essential core tasks:
+  - from managing identities to restricting platform access;
+  - from worker elections to their payouts;
+  - from proposal submission to their adoption, rejection and implementation;
+  - from on-boarding trustees to managing stakeholders etc.
+
+
+### 2. Services Layer
+  The “Services Layer” offers several services combining which a whole TrueDeck application can be created. Normally, multiple services are necessary for most applications to be built on TrueDeck Platform. Individual services are hardly of any use. Notable services provided through TrueDeck Platform’s service layer will be:
+  - Decentralized Random Number Generation
+  - Bankroll Management
+  - Payout Management
+  - Fiat and Crypto Payments
+  - Platform-wide Coalition Loyalty Program
+  - Cheat and Fraud Detection
+  - Casino Analytics
+  More services will be developed as deemed useful or demanded through proposals.
+
+
+### 3. Applications Layer
+  The “Applications Layer” consists of open-source smart-contact libraries and game logics required to create casino dApps or any other game dApp. Developers will be able to reuse the libraries and integrate their own game smart-contracts to TrueDeck platform. To prevent a developer of new game from cheating players, all smart-contracts will have to be audited by the smart-contract auditing providers through TrueDeck Marketplace. Only after approved by the smart-contract auditors, developers would be able to integrate their new game smart-contract with TrueDeck Platform.
+
+
+### 4. Interface Layer
+  On top of all platform layers, there will be an “Interface Layer”. This layer will comprise of front-end libraries, open-source skins and applications for several user-interfaces of the platform. A developer will be able to create his own front-end for existing games or a completely new game. TrueDeck team will develop default interfaces of all popular games and platform apps. 
+
+### Technology
+Blockchain technology is revolutionary but it’s still in its infancy phase. Ethereum was the first turing complete smart-contract blockchain platform, having a blocktime of 15 seconds and finality in 20 confirmations. Many projects are now trying to achieve sub-second block time and finality in 2 seconds. However, it’s good for fast payments and other use-cases but still not enough for casino games. For example, ideal hand speed in BlackJack game should be 0.3 second for great user experience.
+
+The best solution is to have task-specific blockchains instead of generalized blockchains. Blockchains intended for general use-case have properties that are suitable for broad range of actions like having a large block time. It’s fine for cryptocurrency payment transactions taking minutes for confirmation, but actions which are triggered by players in a game require instant feedback else it hinders with player experience.
+
+TrueDeck is adopting cross-blockchain approach for its platform to combine the best of every blockchain. This seems ambitious but recent developments in inter-blockchain communication will make it possible.
+
+### Modules
+At TrueDeck, we are building the platform in separate independent modules. We have classified following modules as per the use-cases:
+1. Governance
+2. Assets
+3. Game Logic
+4. Player Actions
+
+We have also defined four criterias to help us choose the right blockchain platform. The four criterias are defined as follows:
+- Decentralisation
+- Speed
+- Stability
+- Developer Ecosystem
+
+Now let’s consider each module along with its use-cases and try to find the ideal blockchain properties:
+### 1. Governance
+  Governance is undoubtedly the most important part of a decentralised platform. If it is not implemented the right way, doesn’t matter how good your use-case is and how better it has been developed, it’s not going to work out. On-chain governance has surely its benefits over off-chain governance but has some caveats also. 
+
+  Thus, decentralisation and stability criteria carry more weight when considering the right blockchain platform for Governance mechanism. Speed is not of much importance for Governance as it does not require real-time response, confirmation within a minute would be fine.
+
+
+### 2. Assets
+  An asset is the key property on TrueDeck platform. It’s anything that has a store-of-value and is used to gamble on the platform, simply put it’s players’ fund. Security of players’ fund is the utmost priority of TrueDeck platform and it cannot be taken lightly. Liquidity of crypto assets is also a key metric for a project that addresses crypto market. Supporting assets with more liquidity means more traffic on your platform and greater the adoption.
+
+  Thus, a platform that is stable will be ideal for Asset Management to provide the apex level of security. The platform should have Developer Ecosystem with plenty of projects around assets that can facilitate the asset layer development of TrueDeck Platform. In regards to speed, the underlying platform should be capable of doing fast settlement of assets across many wallets during gameplay and moderate speed during deposits and withdrawals.
+
+
+### 3. Game Logic
+  Being TrueDeck a casino platform, it must handle casino game logics with ultimate level of accuracy. The smart-contracts should be rigorously tested and audited by third-parties as well as bounty hunters. There must not be any vulnerability through which platform can be compromised. 
+
+  Due to the above reasons, the smart-contract logics must be carried out in a language that is being widely used for a while. There should a good amount of activities and known vulnerabilities around it, so auditors can easily identify them before any mishappenings. It is also very hard to find good experts for new languages or technology.
+
+  The speed of this use-case directly impacts the player-experience. However, the logics are only triggered when player wants to resolve the outcome and not during gameplay. Still, it is necessary that game logics are cheaper to perform and faster in calculating the outcome. Decentralisation and stability criteria carry moderate weight for this module. It would be great if there can be a blockchain implementation which is fast without compromising with decentralisation.
+  
+### 4. Player Actions
+  Casino games require instant response to player actions. There are a few off-chain solutions to provide real-time response like state-channels. Generalized state-channels are great when participants are going to exchange many state updates over a long period of time, but is not the ideal solution for building casino games. 
+
+  At TrueDeck, we will use a task-specific blockchain with sub-second blocktime for catching player actions and random number generation. As player actions will be recorded on blockchain and will be immutable. It cannot be denied that an action was not triggered. 
+
+  A very short blocktime will be required for this specific blockchain which can be achieved by ensuring only high performant nodes producing blocks. In order to ensure random number is completely decentralized, a cryptographic mechanism will be used to prevent any node from predicting the number before it is revealed in public.
+  
+Hence, we have identified modules along with their major use-cases.
+
+
+### Selection of Blockchain
+TrueDeck team invested considerable time on exploring the best blockchain implementation for each module. We have researched the merits and demerits, current situation and possible future developments of each implementation currently live in the market.
+
+Let’s define each module’s ideal blockchain implementations as per their requirements addressed in the modules section above:
+
+### 1. COREChain
+  There have been a lot of new blockchain implementations to provide better security, decentralisation and scalability. Before finalizing any implementation right now, it would be better to watch this space for a few months to come. The COREChain will host the “Core Layer” of the TrueDeck Platform composed of “Governance” and “Assets” modules.
+
+### 2. GAMEChain
+  Primarily, GAMEChain will comprise of “Game Logic” module. GAMEChain will be a task-specific blockchain responsible to hosting game smart-contracts managing game logic as well as asset settlement during gameplay. 
+
+  Speed is the priority of “Game Logic” module followed by Decentralisation and Stability. The ideal blockchain implementation for GAMEChain must be able to achieve finality in seconds while maintaining fair amount of decentralisation among network nodes. We have shortlisted some blockchain implementations for GAMEChain, but we will watch this space for upcoming months before deciding which implementation to choose and whether to run our own GAMEChain or use the existing blockchain.
+
+### 3. DICEChain
+  DICEChain is another task-specific blockchain accountable for catching & responding to player actions and decentralised random number generation. Speed and immediate finality is essential for DICEChain. The DICEChain must have following properties:
+  - All participating peer-to-peer nodes must have low latency.
+  - A block must be produced as fast as it can be broadcasted to all nodes.
+  - The block must be final as soon as it enters in blockchain.
+  - The DICEChain doesn’t need to be turing complete.
+  - The block structure should be very basic in order to achieve small blockchain size.
+  Properties mentioned above can enable the platform to achieve 0.3 second hand speed required for casino card games.
+
+Blockchain technology is still in its nascent stage, due to which many new implementations have a degree of risk associated with them. Keeping TrueDeck’s long-term vision in mind, we are taking an approach that will allow TrueDeck to survive even when an underlying implementation goes down. This is why, the most important aspects of TrueDeck platform Governance and Assets will be built upon the most secure platform. Risk associated with any other blockchain implementation will be reduced through modular architecture of the platform and a blockchain migration tool that will allow the platform to migrate the module on a more suitable blockchain implementation.
+
+
+### Storage
+Storing all game records and state of past games on blockchain is not the good design. TrueDeck casino dApp smart-contracts have been optimized to off-load all game state outside blockchain and only keeping the hash of each player’s current game state on blockchain. It is only when the game outcome needs to be resolved, the state is submitted to replay the game by smart-contract and decide the outcome. 
+
+TrueDeck Platform will keep a record of every game on peer-to-peer file system i.e. IPFS. This data will be processed by “Data workers” to detect any cheat or fraud in real-time and preventing the cheater from being successful. This data can also be processed to create useful analytics for the casinos.
+
+### Entities
+TrueDeck is the first truly decentralised blockchain casino platform. Thus, it is important to evaluate the various types of entities and their contribution to the network in order to setup a fair incentive for each.
+
+Entities are classified into 4 categories: User, DAO Member, Worker & Provider.
+
+### 1. User
+Users are platform end-users who are directly associated with online casino industry. They form the most upper layer of TrueDeck ecosystem. They can be a business entity or an individual.
+
+
+##### Operator
+  An operator is a business entity that houses online casino games on his website or app. Operators can offer online casino games through TrueDeck platform, either migrating their existing games or using games from TrueDeck Marketplace provided by Gaming Solution Providers. A TrueDeck operator have these options for bankroll:
+  - fund his own private bankroll,
+  - invite bankrollers to fund the bankroll,
+  - join TrueDeck’s public bankroll to attract players using large payouts.
+  **Incentive:** There will be an incentive for a limited period of time for operators joining TrueDeck platform. Detailed incentive structure will be decided later.
+  
+##### Bankroller
+  A bankroller is an entity who invests in a bankroll to get return on the investment. On TrueDeck platform, individuals, investors and businesses will be able to invest in private and public casino bankrolls. Bankroll management and distribution will be completely carried out by smart-contracts.
+  **Incentive:** In order to promote investors to fund TrueDeck platform public bankroll, there will be an incentive for a limited period of time. Detailed incentive structure will be decided later.
+  
+##### Affiliate
+  An affiliate is a business or individual who drives traffic to an online casino and get rewarded with commission. Affiliates can join programs started by operators for their casino or TrueDeck’s community casino affiliate program. TrueDeck platform manage affiliate payouts through smart-contracts. So affiliates can be assured of guaranteed payments and only work with verified online casinos.
+  **Incentive:** Affiliate network is the strongest medium to promote a new platform to players. There will be an extra incentive for a limited period of time for affiliates to do marketing of TrueDeck platform. Detailed incentive structure will be decided later.
+  
+##### Player
+  A player is the user who plays casino games with real money or social games just for fun. TrueDeck platform provides fair games to players whose mechanisms are completely transparent and can’t be manipulated by anyone. Game logics are programmed into smart-contracts and audited by third-party auditors to verify fairness. Once game smart-contracts are deployed they becomes immutable and even developers cannot change its mechanism.
+  **Incentive:** Players will be rewarded with loyalty points while playing TrueDeck games. For a limited period of time after platform goes live, extra loyalty points will be rewarded. Detailed incentive structure will be decided later.
+
+### 2. DAO Member
+TrueDeck will work as “Decentralized Autonomous Organization (DAO)” through an on-chain governance mechanism. This will help TrueDeck managing complex business functions in a completely decentralized manner. DAO Members will take decisions on proposal submitted by the community through a smart-contract voting mechanism. 
+
+TrueDeck team is currently researching on the various governance models and designing the most effective governance model for TrueDeck Platform. 
+
+### 3. Worker
+Workers are computers deployed by elected individuals or organizations in order to secure the platform and perform the work assigned to them continuously, throughout the day and night. We are defining more worker entities in order to keep the network efficient and secured from any attack.
+
+DICE Worker is responsible to secure the task-specific DICEChain. It’s main task is to produce blocks for DICEChain at a very high speed. To maintain very low latency between DICE Workers, all DICE worker nodes are tested regularly and voted by TrueDeck DAO. Only the best workers with highest performance make it to the top. For every new block, a group of workers are elected at random from top workers and they jointly create a random number which is included in the new block. Before being included in block, random number cannot be predicted by anyone, not even elected workers. The complete mechanism of decentralized random number generation by DICE workers cannot be disclosed at this point.
+**Incentive:** For each new block, DICE workers are rewarded with tokens. Detailed mechanism for DICE worker incentives will be decided later.
+
+### 4. PROVIDER
+Providers are business entities or developers that provides various kind of services to operators. Providers aids the platform growth with their offered services in key areas like gaming, identity, payments etc. All providers are not rewarded with incentives as they make profit by offering their services to operators. However, top developers of TrueDeck’s Platform will be rewarded to offer high-end games to platform operators.
+
+## Tokens
+A proper token mechanism lays the foundation of a successful decentralised project. TrueDeck token mechanism is the most significant and crucial part of TrueDeck ecosystem. After working with several legal firms and qualified lawyers, we have revised our token mechanism to minimize “token security” issues and to maximize benefits for token holders.
+
+### TrueDeck (TDP) Token
+The “TrueDeck Platform (TDP)” token is the core utility token of the platform. TDP token should be purchased with an intent to take part in the future of online casino industry, the TrueDeck Platform. TDP scope of utility is limited to the TrueDeck platform only and it does not carry any value outside the platform.
+
+TDP token is a claim on TrueDeck Platform’s resources and a “commitment to stake” in order to avail the services offered by the platform. It is intended to be used by online casino businesses and individuals who want to be a part of the TrueDeck Platform. Here are some notable utilities of TDP token:
+### 1. Locking by casinos
+  Casino operators will have to lock a certain amount of TDP in order to run their Casino on TrueDeck Platform. More amount of TDP will have to be locked to support more players.
+### 2. Locking by workers
+  To be able to become a candidate in worker elections, individuals will have to lock a certain amount of TDP. The election process will be carried out by smart-contracts and DAO Members will vote for best workers as per their profile.
+### 4. Locking by providers
+  Providers who will sell their services or products on TrueDeck Marketplace will have to lock a specific amount of TDP. There will be a variety of services offered on TrueDeck Marketplace i.e. Data analytics, KYC, Game development & customisation etc.
+### 5. Locking by bankrollers
+  Individuals will be able to invest with a major cryptocurrency in TrueDeck bankroll to support the platform. But to be able to invest, one will have to lock a small amount of TDP. However, TDP token itself cannot be used to fund the bankroll.
+### 6. Proposal submission fees
+  Proposals can be submitted by anyone to the DAO for a small fee paid in TDP which is collected in a pool. Submitter of an adopted proposal get a reward from the pool along with their fee.
+### 7. Paying for services on TrueDeck Marketplace
+  Only TDP tokens can be used in order to buy services from providers on TrueDeck Marketplace and a small part of fees will either go to a platform fund or will be burned.
+
+Instead of buying TDP tokens in order to lock it, you can get TDP tokens on lease from token holders in return for a recurring fees. This will bring benefits to TDP token holders without giving away their TDP tokens. This will also prevent speculators from holding on TDP tokens.
+
+### TDXP
+TDXP tokens are “TrueDeck eXperience Points”. In order to get the traction of users before the platform goes live, TDXP tokens will be rewarded to players while playing TrueDeck games. TDXP tokens does not carry any real-world value and will not be listed on exchange. It is designed to reward early supporters of TrueDeck.
+
+When the TrueDeck platform will go live, TDXP token holders will be able to use them for in-game purchases and utilities. TDXP tokens cannot be converted to any other form of tokens, however, they can be transferred just like other tokens.
+
+
+## Development Plan
+TrueDeck team has been developing the game smart-contracts since the starting of 2018. In the past couple of months, we have been successful in optimizing the smart-contracts to an exceptional level. Through the experience that we have gained, we are now able to come up with the right approach to develop games which are fully secured by blockchain. The gained experience will lay the foundation of TrueDeck’s proof-of-concept games and the whole platform.
+
+### Proof of concept
+For proof-of-concept games, TrueDeck will be using the approach that will enable us to be live in market as soon as possible. TrueDeck will be partnering with different blockchain platforms to deploy these proof-of-concept game dapps on their platforms. This will enable TrueDeck to seek the advantages of each platform and prepping up the right mix of blockchain technology for the official platform.
+
+### Platform development
+Platform development will continue throughout the testing of proof-of-concept games. We will use the valuable feedback from community to improve our games. Platform development will be carried out in multiple stages and key goals in place. The high priority will surely be fully provably fair casino games with a common bankroll and offering them through our gaming partner channels. 
+
+### Ongoing research
+1. Inter-Blockchain Communication (IBC): TrueDeck is researching on achieving inter-blockchain communication. We will use this mechanism to make communication possible between TrueDeck’s task-specific blockchains in a decentralized manner.
+
+2. DICE Chain: TrueDeck team is working on some approaches to create a blockchain which has the lowest latency between participating nodes and achieves instant finality without any forks. This will make developers to create highly performant blockchain based games without compromising with speed.
+
+
+## Token Sale
+Kickstarting any crypto project takes a lot of effort & resources. The foundation of a successful project is to put together a great team that put honest hard work. Raising a large capital at the early stages of a project does not make it successful. That’s why TrueDeck will take a lean approach and generate value proposition on each stage of development with fewer resources and zero waste. 
+
+Raising large funding round would have enforced needless stress and financial obligations. Launching an ICO could have also restricted the project adaptability in various stages of it's development.
+
+### Private seed
+TrueDeck was a mere thought when we had started working on the idea. But we had a working concept ready within a couple of weeks. Instead of raising funds through Initial Coin Offering (ICO), we had raised a small amount. With that amount, we built a strong foundation by putting together a great team and started working on our proof-of-concept games.
+
+TrueDeck had undergone a "private seed round" in January 2018. We conducted the private seed round in January 2018. We agreed on giving 10 million TDP (5% of the total supply) with 5 months of locking period. After locking period, tokens were credited to partner wallets.
+
+**Private seed round details:**
+When: January 2018
+Tokens: 10 million TDP (5% of the total supply)
+Locking period: 5 months
+
+In future, TrueDeck will conduct further rounds to raise additional funding when required.
+
+
+
+## Conclusion
+Blockchain technology has started the revolution of disrupting everything about 21st century. It is providing a way to create ideas that was not possible with current technologies. Even though blockchain technology is in its nascent stage, the implementation of the ideas have to start now.
+
+We envision TrueDeck as the unified platform which benefits to every actor involved in online casino industry. Operators, developers and players will witness a new way to gamble which provides the same experience but offers a great level of transparency and access to valuable insights. 
+
+Our future goal is to transform TrueDeck into a Decentralised Autonomous Organization (DAO) that is completely govern and driven by the community. A thriving community will propel the TrueDeck platform to new heights and establishing as a key contributor in reshaping of online casino industry.
+
+We have an ambitious vision but we are taking a lean approach of building the platform the right way. We invite you to be a part of our journey which is going to take online casino industry to a whole new era.
 
