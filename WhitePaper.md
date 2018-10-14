@@ -107,7 +107,7 @@ TrueDeck wants to reinvent the way online gambling industry operates. There are 
 - A unified platform which caters to all actors involved: players, developers, operators etc.
 - Provides complete decentralization from random number generation to payout distribution.
 - Has developed technology to provide blockchain casino dApps with real-time game speed.
-- Is the first casino platform running as a Decentralized Autonomous Organization.
+- Is the first casino platform running as a Decentralised Autonomous Organization.
 - Only the one which can save operators a significant amount in operational cost.
 
 TrueDeck will be working with existing online casinos to strengthen the foundation of online gambling industry, initiating an industrial wave to provide better and safer gambling experience to players.
@@ -120,25 +120,25 @@ But many blockchain casino projects have created smart-contracts to payout divid
 ### Setting the standard for the Online Gambling Industry
 With the advent of blockchain technology and its endless possibilities, online casino industry can voyage into a whole new era. In order to get the full exposure, the industry should join hands in defining a common standard. TrueDeck believes the following practices must be carried out by actors involved:
 
-### - Decentralized RNG
+#### Decentralised RNG
 A random number generation mechanism which is decentralized and completely unpredictable. Generation should be as per the industry standards; fast and fair. It should be provably verifiable and auditable by anyone. 
 
-### - Real-time Monitoring
+#### Real-time Monitoring
 All actions should be public and monitored in real-time to detect any cheat or fraud. Random number generation should also be monitored real-time instead of a few checks in a year. 
 
-### Strong KYC/AML Checks
+#### Strong KYC/AML Checks
 Being the highly regulated industry, strong KYC & AML checks should be carried out by all entities involved. However the blockchain technology provides anonymity, but the actors involved should enforce these checks wherever applicable in support of “Responsible Gambling” standards and AML laws.
 
-### User Protection
+#### User Protection
 User data protection should be the utmost priority across this industry. Operators must have robust systems in place to keep their information safe. They should also comply with the laws enforced by the jurisdictions in which they operate.
 
-### Security of players’ funds
+#### Security of players’ funds
 Online casino industry used to be loosely regulated, but has been transformed into a credible and thriving industry. Thus, it is most important to keep the players’ fund secured. Operators and gaming solution providers should come up with solutions to keep them secured from hackers and remove any vulnerability from their systems.
 
-### Fast Deposits and Withdrawals
+#### Fast Deposits and Withdrawals
 Deposits and withdrawals has always been a dissatisfaction to players while playing games online. Despite internet banking has made the process much faster but it is expensive due to involvement of so many third parties. They take their chunk of profit for providing this service. Deposits and withdrawals should be faster and cheaper for easy on-boarding of new players. Still they should be processed in accordance with the AML laws.
 
-### Performance
+#### Performance
 To keep up with the industry advancements, casino websites should strive for 99% uptime in order to provide best gaming experience to players. 
 
 ## Objectives
@@ -248,7 +248,7 @@ The TrueDeck platform has divided into following primary layers:
 
 #### 2. Services Layer
   The “Services Layer” offers several services combining which a whole TrueDeck application can be created. Normally, multiple services are necessary for most applications to be built on TrueDeck Platform. Individual services are hardly of any use. Notable services provided through TrueDeck Platform’s service layer will be:
-  - Decentralized Random Number Generation
+  - Decentralised Random Number Generation
   - Bankroll Management
   - Payout Management
   - Fiat and Crypto Payments
@@ -272,7 +272,7 @@ The best solution is to have task-specific blockchains instead of generalized bl
 
 TrueDeck is adopting cross-blockchain approach for its platform to combine the best of every blockchain. This seems ambitious but recent developments in inter-blockchain communication will make it possible.
 
-### Modules
+#### Modules
 At TrueDeck, we are building the platform in separate independent modules. We have classified following modules as per the use-cases:
 1. Governance
 2. Assets
@@ -315,7 +315,7 @@ Now let’s consider each module along with its use-cases and try to find the id
 Hence, we have identified modules along with their major use-cases.
 
 
-### Selection of Blockchain
+#### Selection of Blockchain
 TrueDeck team invested considerable time on exploring the best blockchain implementation for each module. We have researched the merits and demerits, current situation and possible future developments of each implementation currently live in the market.
 
 Let’s define each module’s ideal blockchain implementations as per their requirements addressed in the modules section above:
@@ -340,7 +340,7 @@ Let’s define each module’s ideal blockchain implementations as per their req
 Blockchain technology is still in its nascent stage, due to which many new implementations have a degree of risk associated with them. Keeping TrueDeck’s long-term vision in mind, we are taking an approach that will allow TrueDeck to survive even when an underlying implementation goes down. This is why, the most important aspects of TrueDeck platform Governance and Assets will be built upon the most secure platform. Risk associated with any other blockchain implementation will be reduced through modular architecture of the platform and a blockchain migration tool that will allow the platform to migrate the module on a more suitable blockchain implementation.
 
 
-### Storage
+#### Storage
 Storing all game records and state of past games on blockchain is not the good design. TrueDeck casino dApp smart-contracts have been optimized to off-load all game state outside blockchain and only keeping the hash of each player’s current game state on blockchain. It is only when the game outcome needs to be resolved, the state is submitted to replay the game by smart-contract and decide the outcome. 
 
 TrueDeck Platform will keep a record of every game on peer-to-peer file system i.e. IPFS. This data will be processed by “Data workers” to detect any cheat or fraud in real-time and preventing the cheater from being successful. This data can also be processed to create useful analytics for the casinos.
@@ -374,7 +374,7 @@ Users are platform end-users who are directly associated with online casino indu
   **Incentive:** Players will be rewarded with loyalty points while playing TrueDeck games. For a limited period of time after platform goes live, extra loyalty points will be rewarded. Detailed incentive structure will be decided later.
 
 #### 2. DAO Member
-TrueDeck will work as “Decentralized Autonomous Organization (DAO)” through an on-chain governance mechanism. This will help TrueDeck managing complex business functions in a completely decentralized manner. DAO Members will take decisions on proposal submitted by the community through a smart-contract voting mechanism. 
+TrueDeck will work as “Decentralised Autonomous Organization (DAO)” through an on-chain governance mechanism. This will help TrueDeck managing complex business functions in a completely decentralized manner. DAO Members will take decisions on proposal submitted by the community through a smart-contract voting mechanism. 
 
 TrueDeck team is currently researching on the various governance models and designing the most effective governance model for TrueDeck Platform. 
 
@@ -384,7 +384,7 @@ Workers are computers deployed by elected individuals or organizations in order 
 DICE Worker is responsible to secure the task-specific DICEChain. It’s main task is to produce blocks for DICEChain at a very high speed. To maintain very low latency between DICE Workers, all DICE worker nodes are tested regularly and voted by TrueDeck DAO. Only the best workers with highest performance make it to the top. For every new block, a group of workers are elected at random from top workers and they jointly create a random number which is included in the new block. Before being included in block, random number cannot be predicted by anyone, not even elected workers. The complete mechanism of decentralized random number generation by DICE workers cannot be disclosed at this point.
 **Incentive:** For each new block, DICE workers are rewarded with tokens. Detailed mechanism for DICE worker incentives will be decided later.
 
-#### 4. PROVIDER
+#### 4. Provider
 Providers are business entities or developers that provides various kind of services to operators. Providers aids the platform growth with their offered services in key areas like gaming, identity, payments etc. All providers are not rewarded with incentives as they make profit by offering their services to operators. However, top developers of TrueDeck’s Platform will be rewarded to offer high-end games to platform operators.
 
 ## Tokens
@@ -409,7 +409,7 @@ TDP token is a claim on TrueDeck Platform’s resources and a “commitment to s
 
 Instead of buying TDP tokens in order to lock it, you can get TDP tokens on lease from token holders in return for a recurring fees. This will bring benefits to TDP token holders without giving away their TDP tokens. This will also prevent speculators from holding on TDP tokens.
 
-### TDXP
+### TrueDeck eXperience Points (TDXP)
 TDXP tokens are “TrueDeck eXperience Points”. In order to get the traction of users before the platform goes live, TDXP tokens will be rewarded to players while playing TrueDeck games. TDXP tokens does not carry any real-world value and will not be listed on exchange. It is designed to reward early supporters of TrueDeck.
 
 When the TrueDeck platform will go live, TDXP token holders will be able to use them for in-game purchases and utilities. TDXP tokens cannot be converted to any other form of tokens, however, they can be transferred just like other tokens.
@@ -426,9 +426,9 @@ For proof-of-concept games, TrueDeck will be using the approach that will enable
 Platform development will continue throughout the testing of proof-of-concept games. We will use the valuable feedback from community to improve our games. Platform development will be carried out in multiple stages and key goals in place. The high priority will surely be fully provably fair casino games with a common bankroll and offering them through our gaming partner channels. 
 
 ### Ongoing research
-1. Inter-Blockchain Communication (IBC): TrueDeck is researching on achieving inter-blockchain communication. We will use this mechanism to make communication possible between TrueDeck’s task-specific blockchains in a decentralized manner.
+**1. Inter-Blockchain Communication (IBC):** TrueDeck is researching on achieving inter-blockchain communication. We will use this mechanism to make communication possible between TrueDeck’s task-specific blockchains in a decentralized manner.
 
-2. DICE Chain: TrueDeck team is working on some approaches to create a blockchain which has the lowest latency between participating nodes and achieves instant finality without any forks. This will make developers to create highly performant blockchain based games without compromising with speed.
+**2. DICE Chain:** TrueDeck team is working on some approaches to create a blockchain which has the lowest latency between participating nodes and achieves instant finality without any forks. This will make developers to create highly performant blockchain based games without compromising with speed.
 
 ---
 
