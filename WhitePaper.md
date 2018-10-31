@@ -437,7 +437,7 @@ Kickstarting any crypto project takes a lot of effort & resources. The foundatio
 
 Raising large funding round would have enforced needless stress and financial obligations. Launching an ICO could have also restricted the project adaptability in various stages of its development.
 
-TrueDeck (TDP) Token will be used in token sales to raise funding. TDP token is not equity entitlement and should only be bought to be a part in future of TrueDeck platform. TDP token is a utility token and does not carry any use-case outside the TrueDeck platform.
+TrueDeck (TDP) Token will be used in token sales to raise funding. TDP token is not an equity entitlement and should only be bought to be a part in future of TrueDeck platform. TDP token is a utility token and does not carry any use-case outside the TrueDeck platform.
 
 
 ### Private seed
@@ -451,7 +451,22 @@ When | Tokens | Locking
 :---: | :---: | :---:
 January 2018 | 10 million TDP (5%) | 5 months
 
-In the future, TrueDeck will conduct further rounds to raise additional funding when required.
+### Token distribution
+TrueDeck operations have been running completely on founders' and private seed funding. Once we will launch "Minimum Viable Platform", the revenue generated will also be used in TrueDeck platform development. We believe the revenue being generated from gaming industry will be providing enough funding to cover our burn rate by Q2 2019.
+
+But once we feel that the product is ready to go live, we will raise more funds and escalate the process. The tokens excluding private seed will be reserved for team, foundation, development, marketing, and future fund raising. We are still working on the proper locking mechanism. It will soon be announced publicly and carried out through smart-contracts.
+
+The complete token distribution of TDP will be as follows:
+
+Allocation | Tokens
+:---: | :---:
+Private seed | 5%
+Team | 12%
+Foundation | 10%
+Development | 18%
+Marketing | 15%
+Fund-Raising | 40%
+
 
 ---
 
